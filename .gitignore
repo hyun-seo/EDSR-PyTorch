@@ -64,3 +64,7 @@ target/
 *.txt
 *.swp
 .vscode
+
+
+dataset/DIV2K.tar
+dataset/benchmark.tar
