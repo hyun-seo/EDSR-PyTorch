@@ -20,6 +20,9 @@ src/demo.sh 실행
 
 tensorboard --logdir logger
 
+<br/><br/><br/><br/>
+  
+==============================================================
 
 **About PyTorch 1.2.0**
   * Now the master branch supports PyTorch 1.2.0 by default.
