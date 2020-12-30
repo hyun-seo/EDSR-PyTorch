@@ -1,3 +1,25 @@
+
+
+## 데이터 다운로드
+dataset/ 폴더에서 데이터 다운로드후 풀기
+
+
+'''
+wget https://cv.snu.ac.kr/research/EDSR/benchmark.tar
+wget https://cv.snu.ac.kr/research/EDSR/DIV2K.tar
+'''
+
+
+## 모델 학습
+
+src/demo.sh 실행
+
+
+## 텐서보드
+
+tensorboard --logdir logger
+
+
 **About PyTorch 1.2.0**
   * Now the master branch supports PyTorch 1.2.0 by default.
   * Due to the serious version problem (especially torch.utils.data.dataloader), MDSR functions are temporarily disabled. If you have to train/evaluate the MDSR model, please use legacy branches.

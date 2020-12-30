@@ -41,6 +41,23 @@ class timer():
     def reset(self):
         self.acc = 0
 
+class Meter:
+    def __init__(self) -> None:
+        self.value = 0.
+        self.count = 0.
+    
+    def add(self, value, count=1):
+        self.value += value
+        self.count += count
+    
+    def avg(self):
+        assert(self.count != 0)
+        return self.value/self.count
+    
+    def reset(self):
+        self.value = 0.
+        self.count = 0.
+        
 class checkpoint():
     def __init__(self, args):
         self.args = args
@@ -226,7 +243,7 @@ def make_optimizer(args, target):
             self.scheduler.step()
 
         def get_lr(self):
-            return self.scheduler.get_lr()[0]
+            return self.scheduler.get_last_lr()[0]
 
         def get_last_epoch(self):
             return self.scheduler.last_epoch

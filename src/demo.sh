@@ -1,5 +1,17 @@
+
+## Exp List
+python main_v1_baseline.py --model EDSR --scale 2 --patch_size 96 --save edsr_baseline_x2_baseline --reset --data_test Set5+Set14+B100+Urban100+DIV2K --data_range 1-800/801-900 &&
+python main_v2_pooling.py  --model EDSR --scale 2 --patch_size 96 --save edsr_baseline_x2_pooling --reset --data_test Set5+Set14+B100+Urban100+DIV2K --data_range 1-800/801-900 &&
+python main_v1_baseline.py --template RCAN --scale 2 --patch_size 96 --save rcan_baseline_x2_baseline --reset --data_test Set5+Set14+B100+Urban100+DIV2K --data_range 1-800/801-900 &&
+python main_v2_pooling.py --template RCAN --scale 2 --patch_size 96 --save rcan_baseline_x2_pooling --reset --data_test Set5+Set14+B100+Urban100+DIV2K --data_range 1-800/801-900
+
+
+
+
+
+
 # EDSR baseline model (x2) + JPEG augmentation
-python main.py --model EDSR --scale 2 --patch_size 96 --save edsr_baseline_x2 --reset
+# python main.py --model EDSR --scale 2 --patch_size 96 --save edsr_baseline_x2 --reset
 #python main.py --model EDSR --scale 2 --patch_size 96 --save edsr_baseline_x2 --reset --data_train DIV2K+DIV2K-Q75 --data_test DIV2K+DIV2K-Q75
 
 # EDSR baseline model (x3) - from EDSR baseline model (x2)
