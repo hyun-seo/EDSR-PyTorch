@@ -4,10 +4,11 @@
 dataset/ 폴더에서 데이터 다운로드후 풀기
 
 
-'''
+
 wget https://cv.snu.ac.kr/research/EDSR/benchmark.tar
+
 wget https://cv.snu.ac.kr/research/EDSR/DIV2K.tar
-'''
+
 
 
 ## 모델 학습
